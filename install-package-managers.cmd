@@ -39,12 +39,12 @@ if %ERRORLEVEL% EQU 0 (
 ) else (
     echo winget not found. Attempting to install winget...
     REM Download the winget installer bundle
-    @powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://github.com/microsoft/winget-cli/releases/latest/download/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' -OutFile '%TEMP%\winget.msixbundle'"
+    @powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://github.com/microsoft/winget-cli/releases/latest/download/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' -OutFile 'winget.msixbundle'"
     if %ERRORLEVEL% NEQ 0 (
         echo Error downloading the winget installer.
     ) else (
         echo Download complete. Installing winget...
-        @powershell -NoProfile -ExecutionPolicy Bypass -Command "Add-AppxPackage -Path '%TEMP%\winget.msixbundle'"
+        @powershell -NoProfile -ExecutionPolicy Bypass -Command "Add-AppxPackage -Path 'winget.msixbundle'"
         if %ERRORLEVEL% NEQ 0 (
             echo Error installing winget.
         ) else (
