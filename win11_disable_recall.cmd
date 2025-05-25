@@ -4,6 +4,16 @@ REM win11_disable_recall.cmd
 REM Script to disable and remove the Recall feature, and enforce the GPO policy
 REM =====================================================================
 
+REM Check for administrative privileges
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+if %errorlevel% NEQ 0 (
+    echo.
+    echo ERROR: This script must be run as Administrator.
+    echo Right-click the script and choose "Run as administrator".
+    pause
+    exit /b 1
+)
+
 echo Disabling the Recall feature...
 dism.exe /Online /Disable-Feature /FeatureName:Recall /Remove /NoRestart
 if %ERRORLEVEL% NEQ 0 (
