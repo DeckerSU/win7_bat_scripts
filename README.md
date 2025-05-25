@@ -1,13 +1,8 @@
-## Что это? ##
+## What is this? ##
 
-[win7_bat_scripts](https://github.com/DeckerSU/win7_bat_scripts) - это репозиторий, содержащий несколько полезных пакетных сценариев (или проще bat файлов) для Windows 7 / 8 / 10, которые позволяют автоматизировать ряд рутинных операций после установки ОС.
+[win7_bat_scripts](https://github.com/DeckerSU/win7_bat_scripts) is a repository containing several useful batch scripts (or simply `.bat` files) for Windows 7 / 8 / 10 that allow you to automate a number of routine operations after installing the OS.
 
-- **disable_gwx.cmd** -  помогает отключить навязчивое сообщение в трее на ранних версиях ОС Windows (имеются ввиду Win7 и Win8) о необходимости обновления на Win10. Подробнее здесь - [Как удалить сообщение в трее о необходимости получения Windows 10?](http://www.decker.su/2015/11/windows-10-disable-gwx-notify.html)
-- **win7_desktop_icons.cmd** - как известно в новых версиях Windows по-умолчанию отключены привычные многим пользователям еще с Windows XP значки рабочего стола, такие как Мой компьютер, Сеть, Панель управления и т.п. Этот файл позволяет включить их с помощью одного клика с помощью интерфейса Windows, вот как это выглядит:
-
-	![](http://i.imgur.com/Y7R69qy.jpg)
-
-	Т.е. фактически файл позволяет быстро запустить меню "Параметры значков рабочего стола".
-
-- **win7_keyb_layout.cmd** - устанавливает сочетание клавиш переключения раскладки клавиатуры (En/Ru) как Ctrl-Shift, причем изменение производится как для текущего пользователя, так и для всех пользователей системы. Удобно для тех, кто всегда хотел чтобы на экране приветствия клавиатура тоже переключалась с помощью Ctrl-Shift.
-- **win7_godmode.cmd** - создает ярлык всем известного God Mode в Windows 7 на рабочем столе текущего пользователя.
+- **disable_gwx.cmd** – helps disable the intrusive system tray notification in early Windows versions (i.e. Win7 and Win8) about the need to upgrade to Windows 10.
+- **win7_desktop_icons.cmd** – as you may know, in newer versions of Windows the familiar desktop icons from Windows XP, such as Computer, Network, Control Panel, etc., are disabled by default. This file lets you enable them with a single click via the Windows interface. In other words, the script quickly launches the “Desktop Icon Settings” menu.
+- **win7_keyb_layout.cmd** – sets the keyboard layout switch shortcut to Ctrl + Shift, applying the change for both the current user and all system users. Handy for anyone who’s always wanted the keyboard to switch with Ctrl + Shift even on the welcome screen.
+- **win7_godmode.cmd** – creates a shortcut to the well-known God Mode in Windows 7 on the current user’s desktop.
